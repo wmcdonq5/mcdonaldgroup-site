@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Blog</span>
+    <h1>{{ title }}</h1>
+    <p>{{ date | readableDate }}</p>
+  </div>
+</section>
+<section>
+  <div class="container legal-content">
+    {{ content | safe }}
+    <p style="margin-top:40px;"><a href="/blog/" class="btn btn-outline">&larr; Back to all posts</a></p>
+  </div>
+</section>

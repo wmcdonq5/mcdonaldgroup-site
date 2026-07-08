@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Short Description", name: "description", widget: "text", hint: "Shown on the blog listing page." }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "videos"
+    label: "Videos"
+    folder: "src/content/videos"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "YouTube URL", name: "youtube_url", widget: "string", hint: "Paste the full YouTube video link, e.g. https://www.youtube.com/watch?v=XXXXXXXXXXX" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }

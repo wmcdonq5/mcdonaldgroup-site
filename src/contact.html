@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | McDonald Group</title>
+<meta name="description" content="Contact McDonald Group for a free Medicare, Health, or Life insurance consultation. Call 229-457-6943.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:2294576943">Call 229-457-6943</a>
+    <a href="mailto:tylerm@mcdonaldgrouphealth.com">tylerm@mcdonaldgrouphealth.com</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-full.png" alt="McDonald Group - Your Trusted Partner in Medicare & Health" class="brand-logo-img">
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a href="medicare.html" class="dropdown-trigger">Medicare</a>
+        <div class="dropdown-menu">
+          <a href="medicare.html">Medicare Overview</a>
+          <a href="medicare-advantage.html">Medicare Advantage</a>
+          <a href="medicare-supplements.html">Medicare Supplements</a>
+          <a href="medicare-part-d.html">Part D</a>
+        </div>
+      </div>
+      <a href="health.html">Health</a>
+      <a href="life.html">Life</a>
+            <a href="blog/">Blog</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:2294576943">229-457-6943</a>
+      <a class="btn btn-primary" href="contact.html">Free Consultation</a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>Let&rsquo;s find your best plan &mdash; together.</h1>
+    <p>We specialize in Medicare, Life, and ACA health insurance, representing all major carriers serving the healthcare market. Our brokers focus on educating you first so you can make an informed decision.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div>
+      <h2 style="color:var(--navy);">Get in touch</h2>
+      <ul class="contact-info-list">
+        <li>
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8 10.3a16 16 0 0 0 6 6l1.5-1.4a2 2 0 0 1 2.1-.4c1 .4 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg></div>
+          <div><h4>Phone</h4><a href="tel:2294576943">229-457-6943</a></div>
+        </li>
+        <li>
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg></div>
+          <div><h4>Email</h4><a href="mailto:tylerm@mcdonaldgrouphealth.com">tylerm@mcdonaldgrouphealth.com</a></div>
+        </li>
+        <li>
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9.1C.7 8 2 4.3 5.5 3.6 8 3.1 10 4.5 12 6.8c2-2.3 4-3.7 6.5-3.2 3.5.7 4.8 4.4 3 8.2C19 16.4 12 21 12 21Z"/></svg></div>
+          <div><h4>How we help</h4><p>Compare costs of plans, estimate your savings, and guide you through enrollment.</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+      <h2 style="color:var(--navy); margin-top:0;">Send us a message</h2>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="form-row">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us a bit about what you're looking for..."></textarea>
+      </div>
+      <label class="consent-row">
+        <input type="checkbox" required>
+        <span>I consent to receive SMS notifications, alerts, and occasional marketing communications from McDonald Group. Message frequency may vary, and message &amp; data rates may apply. By providing my consent, I acknowledge I have read and agree to the <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms &amp; Conditions</a>. I understand I can reply STOP at any time to unsubscribe.</span>
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-chip"><img src="assets/logo-full.png" alt="McDonald Group logo"></div>
+        <p>Licensed, independent insurance brokers helping individuals and families find Medicare, Health, and Life coverage that fits.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/mcdonaldgrp1" aria-label="Facebook">f</a>
+          <a href="https://www.youtube.com/@MCDONALDGROUP1" aria-label="YouTube">&#9654;</a>
+        </div>
+      </div>
+      <div>
+        <h4>Coverage</h4>
+        <ul>
+          <li><a href="medicare.html">Medicare Overview</a></li>
+          <li><a href="medicare-advantage.html">Medicare Advantage</a></li>
+          <li><a href="medicare-supplements.html">Medicare Supplements</a></li>
+          <li><a href="medicare-part-d.html">Medicare Part D</a></li>
+          <li><a href="health.html">Health Insurance</a></li>
+          <li><a href="life.html">Life Insurance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+                    <li><a href="blog/">Blog</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:2294576943">229-457-6943</a></li>
+          <li><a href="mailto:tylerm@mcdonaldgrouphealth.com">tylerm@mcdonaldgrouphealth.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p>McDonald Group LLC. All rights reserved. Licensed Insurance Agency.</p>
+      <p>We are not connected with or endorsed by the United States government or the federal Medicare program. We do not offer every plan available in your area, and any information we provide is limited to those plans we do offer in your area. Please get in touch with Medicare.gov or 1-800-MEDICARE to get information on all your options. Health Insurance sold on mcdonaldgrouphealth.com is processed through the licensed entity: McDonald Group LLC.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> McDonald Group LLC.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

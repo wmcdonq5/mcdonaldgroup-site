@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: Videos
+description: Educational videos about Medicare, health, and life insurance from McDonald Group.
+permalink: videos.html
+activeNav: videos
+---
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Videos</span>
+    <h1>Watch &amp; learn</h1>
+    <p>Short videos explaining Medicare, health, and life insurance topics &mdash; hosted on our YouTube channel.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    {% if videos.length %}
+    <div class="card-grid" style="grid-template-columns:repeat(2,1fr); gap:32px;">
+      {% for video in videos %}
+      <div class="service-card" style="padding:0; overflow:hidden;">
+        <div style="position:relative; padding-bottom:56.25%; height:0;">
+          <iframe src="https://www.youtube.com/embed/{{ video.youtube_url | youtubeId }}" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen loading="lazy" title="{{ video.title }}"></iframe>
+        </div>
+        <div style="padding:24px 28px;">
+          <h3>{{ video.title }}</h3>
+          <p>{{ video.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="text-align:center; color:var(--gray-500);">No videos yet &mdash; check back soon, or visit our <a href="https://www.youtube.com/@MCDONALDGROUP1">YouTube channel</a> directly.</p>
+    {% endif %}
+  </div>
+</section>

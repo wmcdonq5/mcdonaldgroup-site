@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} | McDonald Group</title>
+<meta name="description" content="{{ description }}">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" href="/assets/favicon-180.png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:2294576943">Call 229-457-6943</a>
+    <a href="mailto:tylerm@mcdonaldgrouphealth.com">tylerm@mcdonaldgrouphealth.com</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="/index.html" class="brand">
+      <img src="/assets/logo-full.png" alt="McDonald Group - Your Trusted Partner in Medicare & Health" class="brand-logo-img">
+    </a>
+    <nav class="main-nav">
+      <a href="/index.html">Home</a>
+      <div class="nav-dropdown">
+        <a href="/medicare.html" class="dropdown-trigger">Medicare</a>
+        <div class="dropdown-menu">
+          <a href="/medicare.html">Medicare Overview</a>
+          <a href="/medicare-advantage.html">Medicare Advantage</a>
+          <a href="/medicare-supplements.html">Medicare Supplements</a>
+          <a href="/medicare-part-d.html">Part D</a>
+        </div>
+      </div>
+      <a href="/health.html">Health</a>
+      <a href="/life.html">Life</a>
+      <a href="/blog/" {% if activeNav == "blog" %}class="active"{% endif %}>Blog</a>
+      <a href="/videos.html" {% if activeNav == "videos" %}class="active"{% endif %}>Videos</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:2294576943">229-457-6943</a>
+      <a class="btn btn-primary" href="/contact.html">Free Consultation</a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+{{ content | safe }}
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-chip"><img src="/assets/logo-full.png" alt="McDonald Group logo"></div>
+        <p>Licensed, independent insurance brokers helping individuals and families find Medicare, Health, and Life coverage that fits.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/mcdonaldgrp1" aria-label="Facebook">f</a>
+          <a href="https://www.youtube.com/@MCDONALDGROUP1" aria-label="YouTube">&#9654;</a>
+        </div>
+      </div>
+      <div>
+        <h4>Coverage</h4>
+        <ul>
+          <li><a href="/medicare.html">Medicare Overview</a></li>
+          <li><a href="/medicare-advantage.html">Medicare Advantage</a></li>
+          <li><a href="/medicare-supplements.html">Medicare Supplements</a></li>
+          <li><a href="/medicare-part-d.html">Medicare Part D</a></li>
+          <li><a href="/health.html">Health Insurance</a></li>
+          <li><a href="/life.html">Life Insurance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/videos.html">Videos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:2294576943">229-457-6943</a></li>
+          <li><a href="mailto:tylerm@mcdonaldgrouphealth.com">tylerm@mcdonaldgrouphealth.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p>McDonald Group LLC. All rights reserved. Licensed Insurance Agency.</p>
+      <p>We are not connected with or endorsed by the United States government or the federal Medicare program. We do not offer every plan available in your area, and any information we provide is limited to those plans we do offer in your area. Please get in touch with Medicare.gov or 1-800-MEDICARE to get information on all your options. Health Insurance sold on mcdonaldgrouphealth.com is processed through the licensed entity: McDonald Group LLC.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> McDonald Group LLC.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

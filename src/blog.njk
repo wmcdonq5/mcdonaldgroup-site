@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Blog
+description: Insurance tips, Medicare updates, and news from McDonald Group.
+permalink: blog/index.html
+activeNav: blog
+---
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Blog</span>
+    <h1>Insurance insights &amp; updates</h1>
+    <p>Tips on Medicare, health, and life insurance from our licensed brokers.</p>
+  </div>
+</section>
+<section>
+  <div class="container">
+    {% if collections.post.length %}
+    <div class="card-grid" style="grid-template-columns:repeat(3,1fr);">
+      {% for post in collections.post | reverse %}
+      <a class="service-card" href="{{ post.url }}" style="text-decoration:none;">
+        <h3>{{ post.data.title }}</h3>
+        <p style="color:var(--gold); font-weight:700; font-size:0.85rem;">{{ post.data.date | readableDate }}</p>
+        <p>{{ post.data.description }}</p>
+        <span class="card-link">Read more</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="text-align:center; color:var(--gray-500);">No posts yet — check back soon.</p>
+    {% endif %}
+  </div>
+</section>
