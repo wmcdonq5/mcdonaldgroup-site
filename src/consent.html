@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scope of Appointment | McDonald Group</title>
+<meta name="description" content="Scope of Appointment Confirmation Form for McDonald Group Medicare consultations.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container nav-wrap">
+<a href="index.html" class="brand">
+<img src="assets/logo-full.png" alt="McDonald Group - Your Trusted Partner in Medicare & Health" class="brand-logo-img">
+</a>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<div class="nav-dropdown">
+<a href="medicare.html" class="dropdown-trigger">Medicare</a>
+<div class="dropdown-menu">
+<a href="medicare.html">Medicare Overview</a>
+<a href="medicare-advantage.html">Medicare Advantage</a>
+<a href="medicare-supplements.html">Medicare Supplements</a>
+<a href="medicare-part-d.html">Part D</a>
+</div>
+</div>
+<a href="health.html">Health</a>
+<a href="life.html">Life</a>
+<a href="blog/">Blog</a>
+<a href="videos.html">Videos</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="header-cta">
+<a class="btn btn-primary" href="contact.html">Free Consultation</a>
+</div>
+</div>
+</header>
+
+<section class="page-hero">
+<div class="container">
+<span class="eyebrow">Medicare Compliance</span>
+<h1>Scope of Appointment Confirmation Form</h1>
+<p>Please complete this form before your appointment with a Licensed Sales Representative. It only takes a minute.</p>
+</div>
+</section>
+
+<section>
+<div class="container legal-content" style="max-width:820px;">
+
+<p>Before meeting with a Medicare beneficiary (or their authorized representative), Medicare requires that Licensed Sales Representatives use this form to ensure your appointment focuses only on the type of plan and products you are interested in. A separate form should be used for each Medicare beneficiary.</p>
+
+<form class="contact-form" name="scope-of-appointment" method="POST" data-netlify="true" id="soaForm" style="margin-top:32px;">
+<input type="hidden" name="form-name" value="scope-of-appointment">
+<input type="hidden" name="signature_date" id="signature_date">
+<input type="hidden" name="rep_signature_date" id="rep_signature_date">
+
+<h2 style="color:var(--navy); margin-top:0;">Topics to Discuss</h2>
+<p><strong>Please check what you want to discuss with the Licensed Sales Representative:</strong></p>
+
+<div class="form-row">
+<label class="consent-row"><input type="checkbox" name="topic_ma" value="Medicare Advantage Plans (Part C) and Cost Plans"><span>Medicare Advantage Plans (Part C) and Cost Plans</span></label>
+<label class="consent-row"><input type="checkbox" name="topic_pdp" value="Stand-alone Medicare Prescription Drug Plan (Part D)"><span>Stand-alone Medicare Prescription Drug Plan (Part D)</span></label>
+<label class="consent-row"><input type="checkbox" name="topic_medigap" value="Medicare Supplement (Medigap) Plan"><span>Medicare Supplement (Medigap) Plan</span></label>
+<label class="consent-row"><input type="checkbox" name="topic_dvh" value="Dental-Vision-Hearing Products"><span>Dental-Vision-Hearing Products</span></label>
+<label class="consent-row"><input type="checkbox" name="topic_hi" value="Hospital Indemnity Products"><span>Hospital Indemnity Products</span></label>
+</div>
+<p id="topicError" style="color:#b3261e; font-size:0.85rem; display:none; margin-top:-10px;">Please select at least one topic.</p>
+
+<details style="margin: 20px 0 30px; background:var(--gray-50); border:1px solid var(--gray-100); border-radius:var(--radius); padding:16px 20px;">
+<summary style="cursor:pointer; font-weight:700; color:var(--navy);">What do these plans mean?</summary>
+<div style="margin-top:14px; font-size:0.92rem; color:var(--gray-700);">
+<p><strong>Medicare Health Maintenance Organization (HMO)</strong> &mdash; A Medicare Advantage Plan that provides all Original Medicare Part A and Part B health coverage and sometimes covers Part D prescription drug coverage. In most HMOs, you can only get your care from doctors or hospitals in the plan&rsquo;s network (except in emergencies).</p>
+<p><strong>Medicare HMO Point-of-Service (HMO-POS)</strong> &mdash; Similar to an HMO, but may allow you to get some services out of network for a higher copayment or coinsurance.</p>
+<p><strong>Medicare Preferred Provider Organization (PPO) Plan</strong> &mdash; Provides all Original Medicare Part A and Part B coverage and sometimes Part D coverage. PPOs have network providers but you can also use out-of-network providers, usually at a higher cost.</p>
+<p><strong>Medicare Private Fee-For-Service (PFFS) Plan</strong> &mdash; You may go to any Medicare-approved provider that accepts the plan&rsquo;s payment terms and agrees to treat you. You will usually pay more to see out-of-network providers.</p>
+<p><strong>Medicare Special Needs Plan (SNP)</strong> &mdash; A Medicare Advantage Plan with benefits designed for people with special health care needs, such as those with both Medicare and Medicaid, nursing home residents, or certain chronic conditions.</p>
+<p><strong>Medicare Medical Savings Account (MSA) Plan</strong> &mdash; Combines a high deductible health plan with a bank account. The plan deposits money from Medicare into the account, which you can use for medical expenses until your deductible is met.</p>
+<p><strong>Medicare Cost Plan</strong> &mdash; You can go to providers both in and out of network. Services outside the plan&rsquo;s network are paid under Original Medicare, and you are responsible for Medicare coinsurance and deductibles.</p>
+<p><strong>Medicare Prescription Drug Plan (PDP)</strong> &mdash; A stand-alone drug plan that adds prescription drug coverage to Original Medicare, some Medicare Cost Plans, some PFFS Plans, and MSA Plans.</p>
+<p><strong>Medicare Supplement (Medigap) Products</strong> &mdash; Insurance plans that help pay some of the out-of-pocket costs not paid by Original Medicare (Parts A and B), such as deductibles and coinsurance for Medicare-approved services.</p>
+<p><strong>Dental/Vision/Hearing Products</strong> &mdash; Plans offering additional benefits for dental, vision, or hearing needs. These plans are not affiliated or connected to Medicare.</p>
+<p><strong>Hospital Indemnity Products</strong> &mdash; Plans offering additional benefits payable to consumers based on their medical utilization, sometimes used to defray copays/coinsurance. These plans are not affiliated or connected to Medicare.</p>
+</div>
+</details>
+
+<p>By signing this form, you agree to meet with a Licensed Sales Representative to discuss the products checked above. The Licensed Sales Representative is either employed or contracted by a Medicare plan and may be paid based on your enrollment in a plan. They <strong>do not</strong> work directly for the federal government.</p>
+<p>Signing this form <strong>does not</strong> affect your current or future enrollment in a Medicare plan, enroll you in a Medicare plan, or obligate you to enroll in a Medicare plan. All information provided on this form is confidential.</p>
+
+<h2 style="color:var(--navy);">Beneficiary Information</h2>
+<div class="form-row">
+<label for="beneficiary_name">Beneficiary Name (First &amp; Last)</label>
+<input type="text" id="beneficiary_name" name="beneficiary_name" placeholder="Your full name" required>
+</div>
+<div class="form-row">
+<label for="beneficiary_phone">Beneficiary Phone</label>
+<input type="tel" id="beneficiary_phone" name="beneficiary_phone" placeholder="(555) 555-5555" required>
+</div>
+<div class="form-row">
+<label for="beneficiary_address">Beneficiary Address</label>
+<input type="text" id="beneficiary_address" name="beneficiary_address" placeholder="Street, City, State, ZIP">
+</div>
+
+<div class="form-row">
+<label class="consent-row"><input type="checkbox" id="isRep" name="signing_as_representative" value="Yes"><span>I am signing on behalf of the beneficiary as their authorized representative.</span></label>
+</div>
+<div id="repFields" style="display:none;">
+<div class="form-row">
+<label for="rep_name_print">Authorized Representative Name (First &amp; Last)</label>
+<input type="text" id="rep_name_print" name="rep_name_print" placeholder="Your full name">
+</div>
+<div class="form-row">
+<label for="rep_relationship">Relationship to Beneficiary</label>
+<input type="text" id="rep_relationship" name="rep_relationship" placeholder="e.g. Spouse, Adult Child, Caregiver">
+</div>
+</div>
+
+<h2 style="color:var(--navy);">Beneficiary or Authorized Representative Signature</h2>
+<div class="form-row">
+<label for="beneficiary_signature">Type your full name to sign</label>
+<input type="text" id="beneficiary_signature" name="beneficiary_signature" placeholder="Type your full legal name" required>
+</div>
+<p style="font-size:0.85rem; color:var(--gray-500); margin-top:-12px;">By typing your name above, you are electronically signing this form. Signature date: <strong id="dateDisplay"></strong></p>
+
+<h2 style="color:var(--navy); margin-top:40px;">To Be Completed by Licensed Sales Representative</h2>
+<div class="form-row">
+<label for="rep_name">Licensed Sales Representative Name</label>
+<input type="text" id="rep_name" name="rep_name" placeholder="Agent full name" required>
+</div>
+<div class="form-row">
+<label for="rep_phone">Licensed Sales Representative Phone</label>
+<input type="tel" id="rep_phone" name="rep_phone" value="229-457-6973">
+</div>
+<div class="form-row">
+<label for="rep_id">Licensed Sales Representative ID</label>
+<input type="text" id="rep_id" name="rep_id" placeholder="Agent NPN or ID (optional)">
+</div>
+<div class="form-row">
+<label for="appointment_date">Date Appointment Will Be Completed</label>
+<input type="date" id="appointment_date" name="appointment_date">
+</div>
+<div class="form-row">
+<label for="contact_method">Initial Method of Contact</label>
+<select id="contact_method" name="contact_method">
+<option value="">Select one</option>
+<option value="Phone">Phone</option>
+<option value="Text">Text</option>
+<option value="Email">Email</option>
+<option value="In Person">In Person</option>
+<option value="Referral">Referral</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="form-row">
+<label for="plans_represented">Plan(s) the Licensed Sales Representative Will Represent During the Meeting</label>
+<input type="text" id="plans_represented" name="plans_represented" placeholder="e.g. Carrier names or plan types">
+</div>
+<div class="form-row">
+<label for="rep_signature">Licensed Sales Representative Signature (type full name)</label>
+<input type="text" id="rep_signature" name="rep_signature" placeholder="Type representative's full name">
+</div>
+
+<button type="submit" class="btn btn-primary btn-block">Submit Scope of Appointment</button>
+</form>
+
+</div>
+</section>
+
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="footer-logo-chip"><img src="assets/logo-full.png" alt="McDonald Group logo"></div>
+<p>Licensed, independent insurance brokers helping individuals and families find Medicare, Health, and Life coverage that fits.</p>
+<div class="social-row">
+<a href="https://www.facebook.com/mcdonaldgrp1" aria-label="Facebook">f</a>
+<a href="https://www.youtube.com/@MCDONALDGROUP1" aria-label="YouTube">&#9654;</a>
+</div>
+</div>
+<div>
+<h4>Coverage</h4>
+<ul>
+<li><a href="medicare.html">Medicare Overview</a></li>
+<li><a href="medicare-advantage.html">Medicare Advantage</a></li>
+<li><a href="medicare-supplements.html">Medicare Supplements</a></li>
+<li><a href="medicare-part-d.html">Medicare Part D</a></li>
+<li><a href="health.html">Health Insurance</a></li>
+<li><a href="life.html">Life Insurance</a></li>
+</ul>
+</div>
+<div>
+<h4>Company</h4>
+<ul>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="consent.html">Scope of Appointment</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-disclaimer">
+<p>We are not connected with or endorsed by the United States government or the federal Medicare program. We do not offer every plan available in your area, and any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all your options.</p>
+</div>
+<div class="footer-bottom">
+<span>&copy; <span id="year"></span> McDonald Group LLC.</span>
+</div>
+</div>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+var today = new Date().toLocaleDateString('en-US');
+document.getElementById('signature_date').value = today;
+document.getElementById('rep_signature_date').value = today;
+document.getElementById('dateDisplay').textContent = today;
+
+document.getElementById('isRep').addEventListener('change', function() {
+document.getElementById('repFields').style.display = this.checked ? 'block' : 'none';
+});
+
+document.getElementById('soaForm').addEventListener('submit', function(e) {
+var checked = document.querySelectorAll('#soaForm input[type="checkbox"][name^="topic_"]:checked');
+if (checked.length === 0) {
+e.preventDefault();
+document.getElementById('topicError').style.display = 'block';
+window.scrollTo({top: document.getElementById('topicError').offsetTop - 100, behavior: 'smooth'});
+}
+});
+</script>
+</body>
+</html>
